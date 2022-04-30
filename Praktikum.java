@@ -12,7 +12,6 @@ public class Praktikum {
         Converter converter = new Converter(78.5,88.7,0.75);
         DinnerAdvisor dinnerAdvisor = new DinnerAdvisor();
         ExpensesManager expensesManager = new ExpensesManager();
-        
 
         while (true) {
             printMenu();
@@ -58,73 +57,3 @@ public class Praktikum {
         System.out.println("0 - Выход");
     }
 }
-
-
- //Объявите класс здесь
-// public class DinnerAdvisor {
-    // void getAdvice(double moneyBeforeSalary, int daysBeforeSalary){
-        // if (moneyBeforeSalary < 3000) {
-            // System.out.println("Сегодня лучше поесть дома. Экономьте, и вы дотянете до зарплаты!");
-        // } else if (moneyBeforeSalary < 10000) {
-            // if (daysBeforeSalary < 10) {
-                // System.out.println("Окей, пора в Макдак!");
-            // } else {
-                // System.out.println("Сегодня лучше поесть дома. Экономьте, и вы дотянете до зарплаты!");
-            // }
-        // } else if (moneyBeforeSalary < 30000) {
-            // if (daysBeforeSalary < 10) {
-                // System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место. :)");
-            // } else {
-                // System.out.println("Окей, пора в Макдак!");
-            // }
-        // } else {
-            // if (daysBeforeSalary < 10) {
-                // System.out.println("Отлично! Заказывайте крабов!");
-            // } else {
-                // System.out.println("Неплохо! Прикупите долларов и зайдите поужинать в классное место. :)");
-            // }
-        // }
-    // }
-// }
-
-
-/*
-public class ExpensesManager{
-    double[] expenses;
-    
-    ExpensesManager(){
-        expenses = new double[7];
-    }
-    
-    // double saveExpense(Scanner scanner, double moneyBeforeSalary, double[] expenses) {
-    double saveExpense(double moneyBeforeSalary, double expense , int day) {
-        // System.out.println("За какой день вы хотите ввести трату: 1-ПН, 2-ВТ, 3-СР, 4-ЧТ, 5-ПТ, 6-СБ, 7-ВС?");
-        // int day = scanner.nextInt();
-        // System.out.println("Введите размер траты:");
-        // double expense = scanner.nextDouble();
-        moneyBeforeSalary = moneyBeforeSalary - expense;
-        expenses[day - 1] = expenses[day - 1] + expense;
-        System.out.println("Значение сохранено! Ваш текущий баланс в рублях: " + moneyBeforeSalary);
-        if (moneyBeforeSalary < 1000) {
-            System.out.println("На вашем счету осталось совсем немного. Стоит начать экономить!");
-        }
-        return moneyBeforeSalary;
-    }
-
-    void printAllExpenses() {
-        for (int i = 0; i < expenses.length; i++) {
-            System.out.println("День " + (i + 1) + ". Потрачено " + expenses[i] + " рублей");
-        }
-    }
-
-    double findMaxExpense() {
-        double maxExpense = 0;
-        for (int i = 0; i < expenses.length; i++) {
-            if (expenses[i] > maxExpense) {
-                maxExpense = expenses[i];
-            }
-        }
-        return maxExpense;
-    }
-} 
-*/
