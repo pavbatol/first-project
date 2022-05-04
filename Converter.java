@@ -1,7 +1,14 @@
 public class Converter{
+    
     double rateUSD = 78.5;
     double rateEUR = 88.7;
     double rateJPY = 0.75;
+
+    public Converter(double rateUSD, double rateEUR, double rateJPY){
+        this.rateUSD = rateUSD;
+        this.rateEUR = rateEUR;
+        this.rateJPY = rateJPY;
+    }
 
     void convert(double rubles, int currency){
         if (currency == 1) {
